@@ -1,0 +1,121 @@
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Permanent+Marker&family=Raleway:wght@400;700;900&family=Roboto:wght@400;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Roboto;
+}
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+h1{
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}
+h2{
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 16.41px;
+  align-self: self-start;
+}
+p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #515151;
+  line-height: 14.06px;
+}
+.grid-conteiner-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  height: 56px;
+  background-color: #FFFFFF;
+}
+.header-logo {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 32px;
+  align-items: center;
+  justify-self: self-start;
+}
+.header-search {
+  position: relative;
+}
+.header-search img{
+  position: absolute;  
+  right: -41px;
+  border: 1px solid #CCCCCC;
+  padding: 8px;
+}
+.header-search input{
+  width: 348px;
+  height: 40px;
+  border: 1px solid #CCCCCC;
+}
+.header-perfil {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 24px;
+  align-items: center;
+  justify-self: end;
+}
+.conteiner-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;  
+}
+.grid-conteiner-aside {
+  display: grid;
+  grid-template-rows: repeat(10, auto);
+  gap: 22px;
+  justify-items: start;
+  margin-top: 24px;
+  width: 218px;
+  background-color: #FFFFFF;
+}
+.grid-conteiner-aside > li {
+  display: grid;
+  gap: 18px;
+  align-items: center;
+  grid-template-columns: auto auto;  
+}
+main {
+  height: 100%;
+  background-color: #f9f9f9;
+}
+.grid-conteiner-main {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 42px;
+  margin-top: 24px;
+  margin-left: 44px;
+}
+.grid-conteiner-main > li {
+  display: grid;
+  gap: 16px;
+}
+.grid-conteiner-main > li > img {
+  max-width: 250px;
+}
+.grid-conteiner-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  justify-items: left; 
+  gap: 0px 10px;
+  max-width: 250px;
+}
+.grid-conteiner-info > p {
+  grid-column: 2;
+}
+.grid-conteiner-info > img {
+  max-width: 42px;
+}
